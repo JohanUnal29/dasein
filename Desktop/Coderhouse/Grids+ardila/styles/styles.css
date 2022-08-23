@@ -1,0 +1,450 @@
+
+
+/*
+ Diseño mobile 
+*/
+@media only screen and (max-width: 599px) {  
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    background-color:white;
+  }
+
+  .menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-horizontal > li > a{
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .horizonte_a:hover{
+    color: coral;
+  }
+
+  .menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    text-align: center;
+    background-color: #333333;
+  }
+
+  .menu-horizontal li:hover .menu-vertical{
+    display: block;
+  }
+  .menu-vertical li:hover{
+    background-color: coral; 
+    transition-delay:s;
+
+  }
+
+  .menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "productos"
+    "footer";
+    grid-template-columns: 1f;
+    grid-template-rows: repeat(3, 3fr);
+    height: 52vh;
+    column-gap: 10px;
+    row-gap: 40px;
+    align-content: end;
+
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .footer_footer{
+    display: grid;
+    place-content: center;
+    background-color: #333333;
+
+  }
+
+  .contenido_footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contenido_footer li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .contenido_footer li a:hover{
+    color: coral;
+  }
+
+  #productos {
+    grid-area: productos;
+    display: grid;
+    place-content: center;
+  }
+
+  .img_back {
+    display: grid;
+    place-content: center;
+    background-color: #333333;
+    background-image: url(https://drive.google.com/uc?export=download&id=1leNIWTwyGHwwQPOt9wPTM_IaEv6yXY9Q);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+  }
+
+  .botón_comprar{
+    display: grid;
+    place-content: center;
+    background-color: black;
+    border-radius:5px;
+    height: 40px;
+    width: 100px;
+
+  }
+
+  .texto_botón{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+  } 
+  
+}
+
+/*Diseño tablet*/
+
+@media only screen and (min-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    background-color:white;
+  }
+
+  .menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-horizontal > li > a{
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .horizonte_a:hover{
+    color: coral;
+  }
+
+  .menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    text-align: center;
+    background-color: #333333;
+  }
+
+  .menu-horizontal li:hover .menu-vertical{
+    display: block;
+  }
+  .menu-vertical li:hover{
+    background-color: coral; 
+    transition-delay:s;
+
+  }
+
+  .menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "productos"
+    "footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 3fr);
+    height: 62vh;
+    column-gap: 10px;
+    row-gap: 40px;
+    align-content: end;
+
+  }
+
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .footer_footer{
+    display: grid;
+    place-content: center;
+    background-color: #333333;
+
+  }
+
+  .contenido_footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contenido_footer li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .contenido_footer li a:hover{
+    color: coral;
+  }
+
+  #productos {
+    grid-area: productos;
+    display: grid;
+    place-content: center;
+  }
+
+  .img_back {
+    display: grid;
+    place-content: center;
+    background-color: #333333;
+    background-image: url(https://drive.google.com/uc?export=download&id=1leNIWTwyGHwwQPOt9wPTM_IaEv6yXY9Q);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+  }
+
+  .botón_comprar{
+    display: grid;
+    place-content: center;
+    background-color: black;
+    border-radius:5px;
+    height: 30px;
+    width: 150px;
+
+  }
+
+  .texto_botón{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+  } 
+}
+
+
+/*Fin diseño tablet*/
+
+/* Diseno para desktop */
+
+
+@media only screen and (min-width: 1200px) {
+
+  
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    background-color:white;
+  }
+
+  .menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-horizontal > li > a{
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .horizonte_a:hover{
+    color: coral;
+  }
+
+  .menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    text-align: center;
+    background-color: #333333;
+  }
+
+  .menu-horizontal li:hover .menu-vertical{
+    display: block;
+  }
+  .menu-vertical li:hover{
+    background-color: coral; 
+    transition-delay:s;
+
+  }
+
+  .menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "productos productos productos"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 3fr);
+    height: 100vh;
+    column-gap: 10px;
+    row-gap: 40px;
+    align-content: end;
+
+  }
+
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .footer_footer{
+    display: grid;
+    place-content: center;
+    background-color: #333333;
+
+  }
+
+  .contenido_footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contenido_footer li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .contenido_footer li a:hover{
+    color: coral;
+  }
+
+  #productos {
+    grid-area: productos;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .img_back {
+    display: grid;
+    place-content: center;
+    background-color: #333333;
+  background-image: url(https://drive.google.com/uc?export=download&id=1leNIWTwyGHwwQPOt9wPTM_IaEv6yXY9Q);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+  }
+
+  .botón_comprar{
+    display: grid;
+    place-content: center;
+    background-color: black;
+    border-radius:5px;
+    height: 30px;
+    width: 150px;
+
+  }
+
+  .texto_botón{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+}
+
+
+/* Fin de diseno para desktop */
