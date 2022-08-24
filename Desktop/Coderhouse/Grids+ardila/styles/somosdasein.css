@@ -288,7 +288,9 @@
   }
 
   .horizonte_a:hover{
+    transition: all 0.5s ease;
     color: coral;
+    font-size: 18px;
   }
 
   .menu-vertical{
@@ -301,6 +303,7 @@
 
   .menu-horizontal li:hover .menu-vertical{
     display: block;
+    
   }
   .menu-vertical li:hover{
     background-color: coral; 
@@ -355,6 +358,12 @@
 
   }
 
+  .footer_footer:hover{
+    transition: all 0.5s ease;
+    background-image: linear-gradient(180deg, #ffe1aa 0, #ffd4a7 16.67%, #ffc7a2 33.33%, #f2b99d 50%, #e1ac97 66.67%, #d1a092 83.33%, #c2968d 100%);   
+
+   }
+
   .contenido_footer{
     list-style: none;
     display: flex;
@@ -369,7 +378,8 @@
   }
 
   .contenido_footer li a:hover{
-    color: coral;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
   }
 
   #productos {
